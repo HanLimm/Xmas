@@ -1,0 +1,64 @@
+* body{
+    margin:0px;
+    font-family: 'Christmas   Classica', sans-serif;
+                                                
+}
+h4{
+    font-family:"helvetica";
+}
+header{
+    min-height:100vh;
+    background: url(1343532.png) no-repeat center;
+    background-size:cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.snow, .snow2{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: url(snow.png);
+    background-position: 0 0;
+}
+.snow{
+    background-size: 70em;
+    animation:
+        snowfall 30s linear infinite;
+}
+.snow2{
+    background-size:50em;
+    animation:
+        snowfall2 30s linear infinite;
+    opacity:0.5s;
+}
+.text h1{
+    position:relative;
+    display:flex;
+    align-items:center;
+    text-align: center;
+    font-size:30px;
+    margin-bottom:600px;
+    margin-left:80px;
+    color:#ffa500;
+}
+.text img{
+    max-width:320px;
+    margin-bottom:100px;
+    margin-left:40px;
+
+}
+@keyframes snowfall{
+    100% {
+        background-position:70em 70em;
+    }
+}
+@keyframes snowfall2{
+    100%{
+        background-position:50em 0;
+    }
+}
+
